@@ -8,14 +8,13 @@ import rehypeKatex from 'rehype-katex';
 
 const site_url = 'https://zc-r.github.io/'
 const repo_url = 'https://github.com/zc-r/'
-//const repo_name = ''
+const repo_name = 'zc-r.github.io'
 
 /** Blog Information. */
 const meta: Config = {
   // site
-  url: 'https://zc-r.github.io/',
+  url: site_url,
   baseUrl: '/',
-  //baseUrl: repo_name,
   trailingSlash: false,
   // home
   title: 'ZC:R',
@@ -64,7 +63,6 @@ const navigation: Navbar = {
       label: "Offset",
       position: "left",
       to: "/Offset",
-      activeBasePath: "/Offset"
     }
   ]
 };
@@ -90,8 +88,7 @@ const theme: ThemeConfig = {
 };
 
 const doc_settings = {
-  //editUrl: repo_url+repo_name+'/edit/main/',
-  editUrl: 'https://github.com/zc-r/zc-r.github.io/edit/main/',
+  editUrl: repo_url+repo_name+'/blob/main/',
   remarkPlugins: [remarkMath],
   rehypePlugins: [[rehypeKatex, { strict: false }]],
   showLastUpdateTime: true,
