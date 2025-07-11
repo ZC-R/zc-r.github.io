@@ -24,8 +24,8 @@ const meta: Config = {
     defaultLocale: 'kr',
     locales: ['kr'],
   },
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'throw',
 }
 
 const codeTheme = {
