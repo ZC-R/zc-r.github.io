@@ -60,9 +60,9 @@ const navigation: Navbar = {
   hideOnScroll: true,
   items: [
     {
-      label: "Offset",
+      label: "offset",
       position: "left",
-      to: "/Offset",
+      to: "/offset",
     }
   ]
 };
