@@ -1,6 +1,6 @@
 import type * as Preset from '@docusaurus/preset-classic';
 import type { Config, PresetConfig, ThemeConfig } from '@docusaurus/types';
-import {themes} from 'prism-react-renderer';
+import { themes } from 'prism-react-renderer';
 //
 import type { Navbar } from '@docusaurus/theme-common'
 import remarkMath from 'remark-math';
@@ -17,7 +17,7 @@ const meta: Config = {
   baseUrl: '/',
   trailingSlash: false,
   // home
-  title: 'ZC:R',
+  title: 'ZC-R',
   //favicon: 'img/favicon.ico',
   // locale  
   i18n: {
@@ -29,8 +29,8 @@ const meta: Config = {
 }
 
 const codeTheme = {
-  theme:themes.oneLight,
-  darkTheme:themes.oneDark,
+  theme: themes.oneLight,
+  darkTheme: themes.oneDark,
   magicComments: [
     // Remember to extend the default highlight class name as well!
     {
@@ -53,16 +53,50 @@ const codeTheme = {
 
 /* Top Navigation bar information */
 const navigation: Navbar = {
-  title: 'ZC:R',
+  title: 'ZC-R',
   //logo: {
   //  src: 'img/favicon.ico',
   //},
   hideOnScroll: true,
   items: [
     {
-      label: "offset",
+      label: "입문서",
+      position: "left",
+      to: "/coming-soon",
+      // to: "/intro",
+    },
+    {
+      label: "함수",
+      position: "left",
+      to: "/coming-soon",
+      // to: "/function",
+    },
+    {
+      label: "오프셋",
       position: "left",
       to: "/offset",
+    },
+    {
+      label: "유틸리티",
+      position: "left",
+      to: "/coming-soon"
+      // to: "/utils",
+    },
+    {
+      label: "기여하기",
+      position: "left",
+      to: "/coming-soon",
+      // to: "/contrib"
+    },
+    {
+      position: "right",
+      to: "https://github.com/ZC-R/zc-r.github.io",
+      className: "header-github-link",
+    },
+    {
+      label: "🍀",
+      position: "right",
+      to: "https://cafe.naver.com/edac",
     }
   ]
 };
@@ -88,7 +122,7 @@ const theme: ThemeConfig = {
 };
 
 const doc_settings = {
-  editUrl: repo_url+repo_name+'/blob/main/',
+  editUrl: repo_url + repo_name + '/blob/main/',
   remarkPlugins: [remarkMath],
   rehypePlugins: [[rehypeKatex, { strict: false }]],
   showLastUpdateTime: true,
