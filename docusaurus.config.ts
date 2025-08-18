@@ -74,7 +74,40 @@ const navigation: Navbar = {
     {
       label: "오프셋",
       position: "left",
-      to: "/offset",
+      items: [
+        {
+          label: "설명",
+          to: "/offset/main",
+        },
+        {
+          label: "Player",
+          to: "/offset/player"
+        },
+        {
+          label: "CUnit",
+          to: "/offset/cunit",
+        },
+        {
+          label: "이미지",
+          to: "/offset/image",
+        },
+        {
+          label: "업그레이드",
+          to: "/offset/upgrade"
+        },
+        {
+          label: "무기",
+          to: "/offset/weapon"
+        },
+        {
+          label: "명령",
+          to: "/offset/order"
+        },
+        {
+          label: "Replay",
+          to: "/offset/replay",
+        }
+      ]
     },
     {
       label: "유틸리티",
