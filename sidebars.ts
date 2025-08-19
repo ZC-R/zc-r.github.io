@@ -12,9 +12,8 @@ const offsetBars: SidebarsConfig = {
   cunitBar: [auto('offset/cunit')],
   orderBar: [auto('offset/order')],
   imageBar: [auto('offset/image')],
-  upgradeBar: [auto('offset/upgrade')],
-  weaponBar: [auto('offset/weapon')],
-  replayBar: [auto('offset/replay')],
+  unitBar: [auto('offset/unit')],
+  etcBar: [auto('offset/etc')],
 }
 
 const contribBars: SidebarsConfig = {

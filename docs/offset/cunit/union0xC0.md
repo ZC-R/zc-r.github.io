@@ -1,4 +1,4 @@
-| 0xC0  | 1   | vultureSpiderMines            |
+| 0xC0  | 1   | vultureSpiderMines                |
 | 0xC0  | 4   | Carrier/Reaver - In Hangar        |
 | 0xC0  | 4   | Scarab/Interceptor - Parent Unit  |
 | 0xC0  | 4   | Beacon - Unknown +00              |

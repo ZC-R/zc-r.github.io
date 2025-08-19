@@ -1,3 +1,5 @@
+| Offset | Size| Name                             |
+|--------|-----|----------------------------------|
 | 0x110  | 2   | removeTimer                      |
 | 0x112  | 2   | defensiveMatrixHP                |
 | 0x114  | 1   | matrixTimer                      |
@@ -9,7 +11,7 @@
 | 0x11A  | 1   | plagueTimer                      |
 | 0x11B  | 1   | stormTimer                       |
 | 0x11C  | 4   | irradiatedBy                     |
-| 0x120  | 1   | irradiatePlayerID               |
+| 0x120  | 1   | irradiatePlayerID                |
 | 0x121  | 1   | parasiteFlags                    |
 | 0x122  | 1   | cycleCounter                     |
 | 0x123  | 1   | blindState                       |

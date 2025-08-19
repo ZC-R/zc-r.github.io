@@ -96,16 +96,12 @@ const navigation: Navbar = {
           to: "/offset/image",
         },
         {
-          label: "업그레이드",
-          to: "/offset/upgrade"
+          label: "유닛",
+          to: "/offset/unit"
         },
         {
-          label: "무기",
-          to: "/offset/weapon"
-        },
-        {
-          label: "Replay",
-          to: "/offset/replay",
+          label: "기타",
+          to: "/offset/etc",
         }
       ]
     },
