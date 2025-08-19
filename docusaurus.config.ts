@@ -60,66 +60,9 @@ const navigation: Navbar = {
   hideOnScroll: true,
   items: [
     {
-      label: "입문서",
-      position: "left",
-      to: "/coming-soon",
-      // to: "/intro",
-    },
-    {
-      label: "함수",
-      position: "left",
-      to: "/coming-soon",
-      // to: "/function",
-    },
-    {
       label: "오프셋",
       position: "left",
-      items: [
-        {
-          label: "설명",
-          to: "/offset/main",
-        },
-        {
-          label: "Player",
-          to: "/offset/player"
-        },
-        {
-          label: "CUnit",
-          to: "/offset/cunit",
-        },
-        {
-          label: "이미지",
-          to: "/offset/image",
-        },
-        {
-          label: "업그레이드",
-          to: "/offset/upgrade"
-        },
-        {
-          label: "무기",
-          to: "/offset/weapon"
-        },
-        {
-          label: "명령",
-          to: "/offset/order"
-        },
-        {
-          label: "Replay",
-          to: "/offset/replay",
-        }
-      ]
-    },
-    {
-      label: "유틸리티",
-      position: "left",
-      to: "/coming-soon"
-      // to: "/utils",
-    },
-    {
-      label: "기여하기",
-      position: "left",
-      to: "/coming-soon",
-      // to: "/contrib"
+      to: "/offset",
     },
     {
       position: "right",
