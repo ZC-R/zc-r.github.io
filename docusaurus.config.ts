@@ -80,12 +80,16 @@ const navigation: Navbar = {
           to: "/offset/main",
         },
         {
-          label: "Player",
+          label: "TrgPlayer",
           to: "/offset/player"
         },
         {
           label: "CUnit",
           to: "/offset/cunit",
+        },
+        {
+          label: "명령",
+          to: "/offset/order"
         },
         {
           label: "이미지",
@@ -98,10 +102,6 @@ const navigation: Navbar = {
         {
           label: "무기",
           to: "/offset/weapon"
-        },
-        {
-          label: "명령",
-          to: "/offset/order"
         },
         {
           label: "Replay",
