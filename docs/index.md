@@ -24,3 +24,24 @@
 4. 게임 구성별 라이브러리 개발
 5. 동적 타이머
 6. 동적 유닛
+
+#### 계획표
+# Intro
+## 계획표
+| 진행 연도 | 완료  | 목표  |
+| :---: | :-: | :-: |
+|2021|:heavy_check_mark:|SC:R 공부
+|2022|:heavy_check_mark:|맵 제작 공부
+|2022|:heavy_check_mark:|EUD 공부
+|2022|:heavy_check_mark:|orderID 연구
+|2023|:heavy_check_mark:|내장WAV 분류
+|2023|:heavy_check_mark:|GPTP 정리
+|2025|:x:|오프셋 문서화
+|2026|:x:|EUD 입문서 작성 및 보완
+|미정|:x:|맵제작 문서 정리
+|미정|:x:|EUD 기술 정리
+|미정|:x:|EUD 라이브러리 제작
+|미정|:x:|게임 구성 분류 및 문서 정리
+|미정|:x:|TUI 도구 개발
+|미정|:x:|GUI 도구 개발
+|미정|:x:|BWAPI 공부
