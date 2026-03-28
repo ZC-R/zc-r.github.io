@@ -2,9 +2,9 @@ import type * as Preset from '@docusaurus/preset-classic';
 import type { Config, PresetConfig, ThemeConfig } from '@docusaurus/types';
 import { themes } from 'prism-react-renderer';
 //
-import type { Navbar } from '@docusaurus/theme-common'
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
+import { navigation } from './topbar';
 
 const site_url = 'https://zc-r.github.io/'
 const repo_url = 'https://github.com/zc-r/'
@@ -51,31 +51,6 @@ const codeTheme = {
   ],
 }
 
-/* Top Navigation bar information */
-const navigation: Navbar = {
-  title: 'ZC-R',
-  //logo: {
-  //  src: 'img/favicon.ico',
-  //},
-  hideOnScroll: true,
-  items: [
-    {
-      label: "오프셋",
-      position: "left",
-      to: "/offset",
-    },
-    {
-      position: "right",
-      to: "https://github.com/ZC-R/zc-r.github.io",
-      className: "header-github-link",
-    },
-    {
-      label: "🍀",
-      position: "right",
-      to: "https://cafe.naver.com/edac",
-    }
-  ]
-};
 
 /** theme setting */
 const theme: ThemeConfig = {
