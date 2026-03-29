@@ -14,6 +14,49 @@ const homeBars: SidebarsConfig = {
 
 const offsetBars: SidebarsConfig = {
   mainBar: [auto('offset')],
+  
+  Client_cameraBar: [auto('Client/Camera')],
+  Client_inputBar: [auto('Client/Input')],
+  Client_renderBar: [auto('Client/Render')],
+  Client_selectionBar: [auto('Client/Selection')],
+  Client_uiBar: [auto('Client/UI')],
+
+  Combat_collisionBar: [auto('Combat/Collision')],
+  Combat_damageBar: [auto('Combat/Damage')],
+  Combat_effectBar: [auto('Combat/Effect')],
+  Combat_projBar: [auto('Combat/Proj')],
+  Combat_stateBar: [auto('Combat/State')],
+
+  CUnit_combatBar: [auto('CUnit/Combat')],
+  CUnit_coreBar: [auto('CUnit/Core')],
+  CUnit_interactionBar: [auto('CUnit/Interaction')],
+  CUnit_moveBar: [auto('CUnit/Move')],
+  CUnit_stateBar: [auto('CUnit/State')],
+  CUnit_unionBar: [auto('CUnit/Union')],
+
+  Engine_debugBar: [auto('Engine/Debug')],
+  Engine_memoryBar: [auto('Engine/Memory')],
+  Engine_pointerBar: [auto('Engine/Pointer')],
+  Engine_structBar: [auto('Engine/Struct')],
+  Engine_unknownBar: [auto('Engine/Unknown')],
+
+  Game_eventBar: [auto('Game/Event')],
+  Game_mapBar: [auto('Game/Map')],
+  Game_ruleBar: [auto('Game/Rule')],
+  Game_stateBar: [auto('Game/State')],
+  Game_timeBar: [auto('Game/Time')],
+
+  Order_controlBar: [auto('Order/Control')],
+  Order_coreBar: [auto('Order/Core')],
+  Order_queueBar: [auto('Order/Queue')],
+  Order_stateBar: [auto('Order/State')],
+  Order_typeBar: [auto('Order/Type')],
+
+  Player_metadataBar: [auto('Player/Metadata')],
+  Player_resourceBar: [auto('Player/Resource')],
+  Player_stateBar: [auto('Player/State')],
+  Player_upgradeBar: [auto('Player/Upgrade')],
+  Player_visionBar: [auto('Player/Vision')],
 }
 
 
