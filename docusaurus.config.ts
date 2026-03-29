@@ -95,6 +95,14 @@ const page1: PresetConfig = [
       ...doc_settings,
       onInlineTags: 'warn',
     },
+    blog: {
+      path: './blog',
+      routeBasePath: 'blog',
+      // showReadingTime: true,
+      blogSidebarTitle: 'Recent posts',
+      blogSidebarCount: 'ALL',
+      editUrl: repo_url + repo_name + '/blob/main/',
+    },
     theme: {
       customCss: './src/css/custom.css',
     },
