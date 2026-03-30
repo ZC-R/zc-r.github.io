@@ -5,6 +5,7 @@ import { themes } from 'prism-react-renderer';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 import { navigation } from './topbar';
+import {gtag, redirects} from './config.config';
 
 const site_url = 'https://zc-r.github.io/'
 const repo_url = 'https://github.com/zc-r/'
@@ -112,6 +113,7 @@ const page1: PresetConfig = [
 const config: Config = {
   ...meta,
   presets: [page1],
+  plugins: [gtag, redirects],
   markdown: {
     mermaid: true,
   },
