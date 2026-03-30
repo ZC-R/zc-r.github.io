@@ -6,13 +6,13 @@ sidebar_position: 0
 
 Structured classification of client-scoped rows from `EUDDB.csv`.
 
-- Total classified rows: 122
+- Total classified rows: 123
 
 ## Categories
 
 | Category | Rows | Focus |
 | --- | ---: | --- |
-| [Render](/Client/Render) | 64 | Images, sprites, flingy visuals, palettes, and draw metadata. |
+| [Render](/Client/Render) | 65 | Images, sprites, flingy visuals, palettes, draw metadata, and client-visible overlays. |
 | [Input](/Client/Input) | 12 | Mouse, keyboard, command acceptance, and message-filter input state. |
 | [UI](/Client/UI) | 26 | Menus, cursors, buttons, display text, portraits, and sound-volume controls. |
 | [Selection](/Client/Selection) | 12 | Selection groups, hotkeys, minimap selection state, and circle colors. |

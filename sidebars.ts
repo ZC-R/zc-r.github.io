@@ -9,7 +9,7 @@ const homeBars: SidebarsConfig = {
   homeBar: [{
     type: "doc",
     id: "index"
-  }],
+  },auto('home')],
 }
 
 const offsetBars: SidebarsConfig = {
@@ -21,12 +21,6 @@ const offsetBars: SidebarsConfig = {
   Client_selectionBar: [auto('Client/Selection')],
   Client_uiBar: [auto('Client/UI')],
 
-  Combat_collisionBar: [auto('Combat/Collision')],
-  Combat_damageBar: [auto('Combat/Damage')],
-  Combat_effectBar: [auto('Combat/Effect')],
-  Combat_projBar: [auto('Combat/Proj')],
-  Combat_stateBar: [auto('Combat/State')],
-
   CUnit_combatBar: [auto('CUnit/Combat')],
   CUnit_coreBar: [auto('CUnit/Core')],
   CUnit_interactionBar: [auto('CUnit/Interaction')],
@@ -34,26 +28,17 @@ const offsetBars: SidebarsConfig = {
   CUnit_stateBar: [auto('CUnit/State')],
   CUnit_unionBar: [auto('CUnit/Union')],
 
-  Engine_debugBar: [auto('Engine/Debug')],
-  Engine_memoryBar: [auto('Engine/Memory')],
-  Engine_pointerBar: [auto('Engine/Pointer')],
-  Engine_structBar: [auto('Engine/Struct')],
-  Engine_unknownBar: [auto('Engine/Unknown')],
-
-  Game_eventBar: [auto('Game/Event')],
-  Game_mapBar: [auto('Game/Map')],
-  Game_ruleBar: [auto('Game/Rule')],
-  Game_stateBar: [auto('Game/State')],
-  Game_timeBar: [auto('Game/Time')],
-
-  Order_controlBar: [auto('Order/Control')],
-  Order_coreBar: [auto('Order/Core')],
-  Order_queueBar: [auto('Order/Queue')],
-  Order_stateBar: [auto('Order/State')],
-  Order_typeBar: [auto('Order/Type')],
+  Game_combatBar: [auto('Game/Combat')],
+  Game_engineBar: [auto('Game/Engine')],
+  Game_gameBar: [auto('Game/Game')],
+  Game_ordersBar: [auto('Game/Orders.dat')],
+  Game_techBar: [auto('Game/Tech.dat')],
+  Game_unitsBar: [auto('Game/Units.dat')],
+  Game_upgradesBar: [auto('Game/Upgrades.dat')],
+  Game_weaponsBar: [auto('Game/Weapons.dat')],
 
   Player_metadataBar: [auto('Player/Metadata')],
-  Player_resourceBar: [auto('Player/Resource')],
+  Player_resBar: [auto('Player/Res')],
   Player_stateBar: [auto('Player/State')],
   Player_upgradeBar: [auto('Player/Upgrade')],
   Player_visionBar: [auto('Player/Vision')],

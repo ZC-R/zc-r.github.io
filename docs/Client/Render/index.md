@@ -6,12 +6,13 @@ sidebar_position: 0
 
 Rendering-related data including images, sprites, and flingy-linked visuals.
 
-- Source rows: 64
+- Source rows: 65
 
 ## Included Offsets
 
 | Address | Name | Size | Length | SCR |
 | --- | --- | ---: | ---: | --- |
+| 0063FF48 | Pylon Auras are Visible | 4 | 1 |  |
 | 00512510 | Image Update Functions | 8 | 18 |  |
 | 005125A0 | Image Drawing Functions | 12 | 18 |  |
 | 005127DC | Tileset Color Cycle Pointers | 4 | 9 |  |

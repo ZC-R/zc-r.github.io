@@ -2,44 +2,40 @@
 sidebar_position: 0
 ---
 
-# Game Event
+# Game Engine
 
-Event, trigger, replay, and other flow-oriented game data.
+Engine-scoped rows from `EUDDB.csv`, including replay-header internals previously grouped under game events.
 
-- Source rows: 74
+- Source rows: 71
+- CSV tag: `Game`, `Engine`
 
 ## Included Offsets
 
 | Address | Name | Size | Length | SCR |
 | --- | --- | ---: | ---: | --- |
-| 004FF900 | Filename for Lastreplay | 12 | 1 |  |
-| 004FF928 | Replay Command Table | 16 | 2 |  |
-| 004FF948 | Replay show command modifiers | 32 | 12 |  |
+| 0050C000 | cInit Constructor Function Table | 4 | 310 |  |
+| 005193A0 | Unit Infomation | 12 | 228 | See Description |
+| 0059CCA8 | Unitnode Table | 336 | 1700 | Backed By Code |
+| 0059CDE0 | Emp Shockwave Missiles (???) | 4 | 1 |  |
+| 006283F0 | usedUnitCount | 4 | 1 | Read Only |
+| 006283F8 | Last Unit Pointer | 4 | 1 |  |
+| 006283F8 | Player Last Unit Pointers | 4 | 12 | Backed By Code |
+| 00628428 | LastHiddenUnitPointer | 4 | 1 | Backed By Code |
+| 0062842C | unknownPointer? | 4 | 1 | Backed By Code |
+| 00628430 | First Unit Pointer | 4 | 1 | Backed By Code |
+| 00628438 | First Empty Unit | 4 | 1 | Backed By Code |
+| 0062843C | LastEmptyUnit | 4 | 1 | Backed By Code |
+| 00628434 | LastScannerSweepPointer | 4 | 1 | Backed By Code |
+| 0064DEBC | bulletCount | 4 | 1 | Read Only |
+| 0068C104 | AIScript pointer | 4 | 1 | Backed By Code |
+| 0068C108 | BWScript pointer | 4 | 1 | Backed By Code |
+| 0068C448 | Sfxdata.dat - minVolume | 1 | 1144 |  |
+| 0068C8C0 | Sfxdata.dat - Flags | 1 | 1144 |  |
+| 0068CD38 | Sfxdata.dat - lengthAdjust | 2 | 1144 |  |
+| 0068D628 | Sfxdata.dat - Priority | 1 | 1144 |  |
+| 0068DAA0 | Sfxdata.dat - Sound file | 4 | 1144 |  |
+| 006D0C70 | Tile Function Pointers | 4 | 4 | Unsupported |
 | 006D0F30 | Replay Header | 633 | 1 | Read Only |
-| 006D0F77 | Replay Header- Computer Player Count | 1 | 1 | Read Only |
-| 00512800 | Trigger Action Function Array | 4 | 60 |  |
-| 00515A98 | Trigger Condition Function Array | 4 | 24 |  |
-| 00519E50 | Mission Briefing Action Function Array | 4 | 10 |  |
-| 0051A280 | Player 1 Trigger List | 4 | 3 | Backed By Code |
-| 0051A28C | Player 2 Trigger List | 4 | 3 | Backed By Code |
-| 0051A298 | Player 3 Trigger List | 4 | 3 | Backed By Code |
-| 0051A2A4 | Player 4 Trigger List | 4 | 3 | Backed By Code |
-| 0051A2B0 | Player 5 Trigger List | 4 | 3 | Backed By Code |
-| 0051A2BC | Player 6 Trigger List | 4 | 3 | Backed By Code |
-| 0051A2C8 | Player 7 Trigger List | 4 | 3 | Backed By Code |
-| 0051A2D4 | Player 8 Trigger List | 4 | 3 | Backed By Code |
-| 0051CE84 | Network Mode Delay | 4 | 1 | Read Only |
-| 0051CE88 | Network Mode Delay 2 | 4 | 1 |  |
-| 0057F090 | Network Provider Latency Calls | 4 | 1 |  |
-| 0057F0B8 | Network Player Status Array | 4 | 8 | Unsupported |
-| 0057F0D8 | Network Maximum Buffer Size | 4 | 1 |  |
-| 0058D6FC | SC Switch Table (Unused?) | 4 | 1 | Simple Data |
-| 00650980 | Trigger Wait Timers | 4 | 8 |  |
-| 006509A0 | Trigger Execution Timer (Hyper triggers) | 4 | 1 | Simple Data |
-| 006509B0 | Trigger Current Player aka CP Trick | 4 | 1 | Simple Data |
-| 00654880 | Network Buffer | 496 | 1 | Backed By Code |
-| 00654AA0 | Network Buffer Used | 4 | 1 | Supported |
-| 006556E4 | Network Latency Option | 4 | 1 |  |
 | 006D0F30 | Replay Header - Is Broodwar | 1 | 1 | Read Only |
 | 006D0F31 | Replay Header - Frame Count | 4 | 1 | Read Only |
 | 006D0F35 | Replay Header - Campaign ID | 2 | 1 | Read Only |
@@ -47,6 +43,7 @@ Event, trigger, replay, and other flow-oriented game data.
 | 006D0F38 | Replay Header - Rand Seed | 4 | 1 | Read Only |
 | 006D0F3C | Replay Header - Player Bytes | 1 | 8 | Read Only |
 | 006D0F44 | Replay Header - Unknown_0 | 4 | 1 | Read Only |
+| 006D0F48 | ?�험 | 25 | 1 | Read Only |
 | 006D0F60 | Replay Header - Game flags | 4 | 1 | Read Only |
 | 006D0F64 | Replay Header - MapSize | 2 | 2 | Read Only |
 | 006D0F68 | Replay Header - Active Player Count | 1 | 1 | Read Only |
@@ -59,6 +56,7 @@ Event, trigger, replay, and other flow-oriented game data.
 | 006D0F70 | Replay Header - Seed (Unused) | 4 | 1 | Read Only |
 | 006D0F74 | Replay Header - Tileset | 2 | 1 | Read Only |
 | 006D0F76 | Replay Header - Autosaved | 1 | 1 | Read Only |
+| 006D0F77 | Replay Header- Computer Player Count | 1 | 1 | Read Only |
 | 006D0F78 | Replay Header - Game Name | 1 | 25 | Read Only |
 | 006D0F91 | Replay Header - Map Name | 1 | 24 | Read Only |
 | 006D0FB1 | Replay Header - Game Type | 1 | 1 | Read Only |
@@ -84,5 +82,5 @@ Event, trigger, replay, and other flow-oriented game data.
 | 006D0FD1 | Replay Header - Player Entries | 36 | 12 | Read Only |
 | 006D1181 | Replay Header - Player Colors | 4 | 8 | Read Only |
 | 006D11A1 | Replay Header - Player Force Data | 1 | 8 | Read Only |
-| 19046138 | Battle.snp Join Channel | 4 | 1 | Simple Data |
-| 1904613C | Battle.snp Join Channel | 4 | 1 | Simple Data |
+| 006D1200 | iscript.bin pointer | 4 | 1 | Backed By Code |
+| 006D1238 | stat_txt.tbl pointer | 4 | 1 | Backed By Code |

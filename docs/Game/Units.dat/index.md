@@ -2,18 +2,17 @@
 sidebar_position: 0
 ---
 
-# Engine Struct
+# Game Units.dat
 
-Engine-owned structures and structural references outside category-specific docs.
+`Units.dat` rows from `EUDDB.csv`.
 
-- Source rows: 61
+- Source rows: 54
+- CSV tag: `Game`, `Units.dat`
 
 ## Included Offsets
 
 | Address | Name | Size | Length | SCR |
 | --- | --- | ---: | ---: | --- |
-| 005193A0 | Unit Infomation | 12 | 228 | See Description |
-| 0059CCA8 | Unitnode Table | 336 | 1700 | Backed By Code |
 | 0065FC18 | Units.dat - Max Hits (Air) | 1 | 228 | Simple Data |
 | 0065FD00 | Units.dat - Gas Cost | 2 | 228 | Simple Data |
 | 0065FEC8 | Units.dat - Armor | 1 | 228 | Simple Data |
@@ -68,8 +67,3 @@ Engine-owned structures and structural references outside category-specific docs
 | 006647B0 | Units.dat - Has Shields | 1 | 228 | Simple Data |
 | 00664898 | Units.dat - Idle Order | 1 | 228 | Simple Data |
 | 00664980 | Units.dat - Infestation Unit | 2 | 96 | Simple Data |
-| 0068C448 | Sfxdata.dat - minVolume | 1 | 1144 |  |
-| 0068C8C0 | Sfxdata.dat - Flags | 1 | 1144 |  |
-| 0068CD38 | Sfxdata.dat - lengthAdjust | 2 | 1144 |  |
-| 0068D628 | Sfxdata.dat - Priority | 1 | 1144 |  |
-| 0068DAA0 | Sfxdata.dat - Sound file | 4 | 1144 |  |

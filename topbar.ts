@@ -16,13 +16,7 @@ const CUnit: NavbarItem = {
 const Order: NavbarItem = {
   label: 'Order',
   position: 'left',
-  items: [
-    { label: 'Core', to: '/Order/Core' },
-    { label: 'State', to: '/Order/State' },
-    { label: 'Type', to: '/Order/Type' },
-    { label: 'Queue', to: '/Order/Queue' },
-    { label: 'Control', to: '/Order/Control' },
-  ],
+  to: '/Order',
 };
 
 const Player: NavbarItem = {
@@ -41,11 +35,13 @@ const Game: NavbarItem = {
   label: 'Game',
   position: 'left',
   items: [
-    { label: 'Time', to: '/Game/Time' },
-    { label: 'Rule', to: '/Game/Rule' },
-    { label: 'State', to: '/Game/State' },
-    { label: 'Map', to: '/Game/Map' },
-    { label: 'Event/Trigger', to: '/Game/Event' },
+    { label: 'Game', to: '/Game/Game' },
+    { label: 'Engine', to: '/Game/Engine' },
+    { label: 'Orders.dat', to: '/Game/Orders.dat' },
+    { label: 'Upgrades.dat', to: '/Game/Upgrades.dat' },
+    { label: 'Tech.dat', to: '/Game/Tech.dat' },
+    { label: 'Weapons.dat', to: '/Game/Weapons.dat' },
+    { label: 'Units.dat', to: '/Game/Units.dat' },
   ],
 };
 
@@ -95,8 +91,6 @@ export const navigation: Navbar = {
     Player,
     Game,
     Client,
-    Combat,
-    Engine,
     { label: 'Blog', position: 'left', to: '/blog' },
     {
       position: 'right',
