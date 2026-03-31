@@ -2,12 +2,12 @@
 sidebar_position: 0
 ---
 
-# Game Weapons.dat
+# Data Weapons.dat
 
 `Weapons.dat` rows from `EUDDB.csv`.
 
 - Source rows: 26
-- CSV tag: `Game`, `Weapons.dat`
+- CSV tag: `Data`, `Weapons.dat`
 
 ## Included Offsets
 

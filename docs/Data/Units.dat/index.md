@@ -2,12 +2,12 @@
 sidebar_position: 0
 ---
 
-# Game Units.dat
+# Data Units.dat
 
 `Units.dat` rows from `EUDDB.csv`.
 
 - Source rows: 54
-- CSV tag: `Game`, `Units.dat`
+- CSV tag: `Data`, `Units.dat`
 
 ## Included Offsets
 

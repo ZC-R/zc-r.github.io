@@ -5,15 +5,10 @@
 * 중분류는 Nested top navigation에 해당합니다.
 * 소분류는 Side navigation에 해당합니다.
 
-### 대분류
+## 대분류
 대분류는 오프셋을 의미론적으로 분류할 수 있어야 합니다.
-
-다음은 대분류의 예시입니다.
-* CUnit은 가장 자주 사용되는 오프셋이며, 170여개의 오프셋이 해당되므로 하나의 대분류를 갖습니다.
-* Player data는 개수는 적으나 의미론적으로 명확한 범주이므로 하나의 대분류를 갖습니다.
-* Graphic/Rendering은 시각적 요소로서 명확한 범주이며, 다양한 활용이 가능하므로 하나의 대분류를 갖습니다.
-* Game state는 게임의 상태를 나타내는 오프셋으로서 하나의 대분류를 갖습니다. 의미론적으로 명확하지 않아 다양한 오프셋이 포함되어 있습니다.
-
-다음은 대분류로 분류되지 않는 예시입니다.
-* Input, UI는 Client data로서 명확한 범주이나, 활용도가 낮고 개수가 적으므로 대분류로 분류되지 않습니다. 현재 Graphic/Rendering과 묶어 Client로 분류되어 있습니다.
-* Orders.dat, Upgrades.dat, Tech.dat, Weapons.dat, Units.dat은 개수가 적으므로 의미론적 유사성이 있는 Game state의 하위 범주로 분류되어 있습니다.
+* `CUnit`은 CUnit 구조체 자체를 설명하는 항목을 묶습니다.
+* `Player`는 플레이어별 상태, 자원, 시야, 메타데이터를 묶습니다.
+* `Client`는 렌더링, 입력, UI, 선택, 카메라처럼 클라이언트 측 동작을 묶습니다.
+* `Data`는 `Orders.dat`, `Upgrades.dat`, `Tech.dat`, `Weapons.dat`, `Units.dat`처럼 정적 데이터 테이블을 묶습니다.
+* `Game`은 세션 상태, 엔진 전역 상태, 리플레이 헤더처럼 게임 진행 전반의 런타임 데이터를 묶습니다.

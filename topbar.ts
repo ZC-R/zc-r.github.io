@@ -13,17 +13,11 @@ const CUnit: NavbarItem = {
   ],
 };
 
-const Order: NavbarItem = {
-  label: 'Order',
-  position: 'left',
-  to: '/Order',
-};
-
 const Player: NavbarItem = {
   label: 'Player',
   position: 'left',
   items: [
-    { label: '자원', to: '/Player/Resource' },
+    { label: '자원', to: '/Player/Res' },
     { label: '업그레이드', to: '/Player/Upgrade' },
     { label: '시야', to: '/Player/Vision' },
     { label: 'State', to: '/Player/State' },
@@ -37,11 +31,19 @@ const Game: NavbarItem = {
   items: [
     { label: 'Game', to: '/Game/Game' },
     { label: 'Engine', to: '/Game/Engine' },
-    { label: 'Orders.dat', to: '/Game/Orders.dat' },
-    { label: 'Upgrades.dat', to: '/Game/Upgrades.dat' },
-    { label: 'Tech.dat', to: '/Game/Tech.dat' },
-    { label: 'Weapons.dat', to: '/Game/Weapons.dat' },
-    { label: 'Units.dat', to: '/Game/Units.dat' },
+    { label: 'ReplayHeader', to: '/Game/ReplayHeader' },
+  ],
+};
+
+const Data: NavbarItem = {
+  label: 'Data',
+  position: 'left',
+  items: [
+    { label: 'Orders.dat', to: '/Data/Orders.dat' },
+    { label: 'Upgrades.dat', to: '/Data/Upgrades.dat' },
+    { label: 'Tech.dat', to: '/Data/Tech.dat' },
+    { label: 'Weapons.dat', to: '/Data/Weapons.dat' },
+    { label: 'Units.dat', to: '/Data/Units.dat' },
   ],
 };
 
@@ -57,40 +59,16 @@ const Client: NavbarItem = {
   ],
 };
 
-const Combat: NavbarItem = {
-  label: 'Combat',
-  position: 'left',
-  items: [
-    { label: '투사체', to: '/Combat/Proj' },
-    { label: '데미지', to: '/Combat/Damage' },
-    { label: '효과', to: '/Combat/Effect' },
-    { label: '충돌', to: '/Combat/Collision' },
-    { label: 'State', to: '/Combat/State' },
-  ],
-};
-
-const Engine: NavbarItem = {
-  label: 'Engine',
-  position: 'left',
-  items: [
-    { label: '메모리', to: '/Engine/Memory' },
-    { label: '구조체', to: '/Engine/Struct' },
-    { label: '포인터', to: '/Engine/Pointer' },
-    { label: 'Unknown', to: '/Engine/Unknown' },
-    { label: 'Debug', to: '/Engine/Debug' },
-  ],
-};
-
 export const navigation: Navbar = {
   title: 'ZC-R',
   hideOnScroll: true,
   items: [
     { label: '오프셋', position: 'left', to: '/offset' },
     CUnit,
-    Order,
     Player,
-    Game,
+    Data,
     Client,
+    Game,
     { label: 'Blog', position: 'left', to: '/blog' },
     {
       position: 'right',

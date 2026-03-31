@@ -31,9 +31,9 @@
 005145C0,Upgrade Reqs data,838,1,Simple Data,,Player,Upgrade
 514908,Research Req Data,318,1,Simple Data,%$& none  How to translate. % �?�� $ ?�국 @ �?..,Player,Upgrade
 00514A48,Tech Use Req Data,688,1,Simple Data,,Player,Upgrade
-00514CF8,Order Req Data,1316,1,Simple Data,,Game,Orders.dat
+00514CF8,Order Req Data,1316,1,Simple Data,,Data,Orders.dat
 00515A98,Trigger Condition Function Array,4,24,,Contains function pointers for all trigger conditions.,Game,Game
-00515B84,Damage type/factor multipliers vs unit size,20,5,Simple Data,"$ Weapon damage type, against each unit size (�??�닛 �?..",Game,Weapons.dat
+00515B84,Damage type/factor multipliers vs unit size,20,5,Simple Data,"$ Weapon damage type, against each unit size (�??�닛 �?..",Data,Weapons.dat
 00515BE8,Button info,11264,1,Backed By Code,https://docs.google.com/spreadsheets/d/195jZK7Ap71eO1-qdVsk...,Client,UI
 5.19E+11,s_button Offset,12,250,Backed By Code,+0x00 (EPD -116447) Number of available buttons. 0 = Butt...,Client,UI
 005193A0,Unit Infomation,12,228,See Description,"Edited by PereC, 2021-06-05 In SC:R, 64-bit starcraft may ...",Game,Engine
@@ -158,7 +158,7 @@
 0058D4D8,SC Upgrade in Progress Lvl 1 (Unused?),1,72,Simple Data,Who knows,Player,Upgrade
 0058D520,SC Upgrade in Progress Lvl 2 (Unused?),1,72,Simple Data,Who knows,Player,Upgrade
 0058D5B0,Player's Force,1,8,Simple Data,"8 bytes: 1 byte for each active player, specifying which o...",Player,Metadata
-0058D5B8,Force Flags,1,4,Simple Data,"4 bytes: 1 byte for each force specifying the flags; 	forc...",Player,Metadata
+0058D5B8,Force Flags,1,4,Simple Data,4 bytes: 1 byte for each force specifying the flags; 	forc...,Player,Metadata
 0058D5BC,Force Names,30,4,Simple Data,"4 byte integers: 1 integer for each force, string number o...",Player,Metadata
 0058D634,Player Alliances,12,12,Simple Data,EPD 3252 + 0x00: P1 ally status to P1 + 0x01: P1 ally sta...,Player,State
 0058D6C4,Mission Objectives Index,4,12,Simple Data,EPD 3288 (+0x00):  This is the Mission Objective String I...,Game,Game
@@ -175,8 +175,8 @@
 0058D718,#'s of Game Pauses,1,8,Simple Data,The base value of this address is: (P1 + P2 + P3 + P4) * 3 ...,Player,State
 0058D720,Start Locations,4,8,Simple Data,Point: u16 X u16 Y  EPD 3311 +0x00: P1 Start Location ...,Game,Game
 0058D740,Vanilla Location Table,20,64,Simple Data,This Location Table is not used in the Expansion (Brood War...,Game,Game
-0058DC40,Switch Table,32,1,Simple Data,"+0x00 (EPD 3639) 	Switch 1: *1 	Switch 2: *2 	Switch 3: ...",Game,Game
-0058DC60,Location Table,20,255,Simple Data,"+0x00 (EPD 3647)  	This is the LEFT position of the locat...",Game,Game
+0058DC40,Switch Table,32,1,Simple Data,+0x00 (EPD 3639) 	Switch 1: *1 	Switch 2: *2 	Switch 3: ...,Game,Game
+0058DC60,Location Table,20,255,Simple Data,+0x00 (EPD 3647)  	This is the LEFT position of the locat...,Game,Game
 0058F04C,Time Pause State,4,1,Simple Data,"If FALSE, the value of the address is 0, and the countdown ...",Game,Game
 0058F050,BW Technologies Available (24-43),20,12,Simple Data,Table layout is reverse compared to deaths/kills table.  ...,Player,Upgrade
 0058F140,BW Technologies Researched (24-43),20,12,Simple Data,Table layout is reverse compared to deaths/kills table.  ...,Player,Upgrade
@@ -259,7 +259,7 @@
 0059CD3A,CUnit - AI Action Flag,1,1,Supported,Internal use by AI only (bwapi),CUnit,State
 0059CD3B,CUnit - User Action Flags,1,1,Supported,Some flags that change when the user interacts with the uni...,CUnit,State
 0059CD3C,CUnit - Button Set,2,1,Supported,The current button set of a unit.,CUnit,State
-0059CD3C,Order Destination Invalid (???),4,1,,"""When this address is frozen and you order a unit to t...",Game,Orders.dat
+0059CD3C,Order Destination Invalid (???),4,1,,"""When this address is frozen and you order a unit to t...",Data,Orders.dat
 0059CD3E,CUnit - Is Cloaked,1,1,Supported,,CUnit,State
 0059CD3F,CUnit - Movement State,1,1,Supported,https://github.com/bwapi/bwapi/blob/master/bwapi/BWAPI/Sour...,CUnit,Move
 0059CD40,CUnit - Build Queue,2,5,Supported,Queue of units to build. Note that it doesn't begin wi...,CUnit,State
@@ -425,135 +425,135 @@
 00654AA0,Network Buffer Used,4,1,Supported,"Command queue (0x00654880) space used. Edited by PereC, 20...",Game,Game
 6.56E+03,Accept Commands,4,1,Unsupported,"If 1, commands are accepted. If 0, all commands are ignore...",Client,Input
 6.56E+07,Network Latency Option,4,1,,"-1 = """"Extra Low Latency"""" 0 = Low Latency 1 = Hi��",Game,Game
-655700,Upgrades.dat - Max Level,1,61,Simple Data,,Game,Upgrades.dat
-655740,Upgrades.dat - Mineral Cost Base,2,61,Simple Data,Address 0x00655740 - Upgrade ID 000 - bit-mask 0x0000FFFF ...,Game,Upgrades.dat
-006557C0,Upgrades.dat - Gas Cost Factor,2,61,Simple Data,,Game,Upgrades.dat
-655840,Upgrades.dat - Gas Cost Base,2,61,Simple Data,,Game,Upgrades.dat
-006558C0,Upgrades.dat - Dat Requirement Offset,2,61,Simple Data,,Game,Upgrades.dat
-655940,Upgrades.dat - Time Factor,2,61,Simple Data,,Game,Upgrades.dat
-006559C0,Upgrades.dat - Mineral Cost Factor,2,61,Simple Data,,Game,Upgrades.dat
-00655A40,Upgrades.dat - Label,2,61,Simple Data,stat_txt.tbl index,Game,Upgrades.dat
-00655AC0,Upgrades.dat - Icon,2,61,Simple Data,cmdicons.grp frame,Game,Upgrades.dat
-00655B3C,Upgrades.dat - Brood War Flag,1,61,Simple Data,,Game,Upgrades.dat
-00655B80,Upgrades.dat - Time Base,2,61,Simple Data,,Game,Upgrades.dat
-00655BFC,Upgrades.dat - Race,1,61,Simple Data,0 = Zerg 1 = Terran 2 = Protoss 3 = All,Game,Upgrades.dat
+655700,Upgrades.dat - Max Level,1,61,Simple Data,,Data,Upgrades.dat
+655740,Upgrades.dat - Mineral Cost Base,2,61,Simple Data,Address 0x00655740 - Upgrade ID 000 - bit-mask 0x0000FFFF ...,Data,Upgrades.dat
+006557C0,Upgrades.dat - Gas Cost Factor,2,61,Simple Data,,Data,Upgrades.dat
+655840,Upgrades.dat - Gas Cost Base,2,61,Simple Data,,Data,Upgrades.dat
+006558C0,Upgrades.dat - Dat Requirement Offset,2,61,Simple Data,,Data,Upgrades.dat
+655940,Upgrades.dat - Time Factor,2,61,Simple Data,,Data,Upgrades.dat
+006559C0,Upgrades.dat - Mineral Cost Factor,2,61,Simple Data,,Data,Upgrades.dat
+00655A40,Upgrades.dat - Label,2,61,Simple Data,stat_txt.tbl index,Data,Upgrades.dat
+00655AC0,Upgrades.dat - Icon,2,61,Simple Data,cmdicons.grp frame,Data,Upgrades.dat
+00655B3C,Upgrades.dat - Brood War Flag,1,61,Simple Data,,Data,Upgrades.dat
+00655B80,Upgrades.dat - Time Base,2,61,Simple Data,,Data,Upgrades.dat
+00655BFC,Upgrades.dat - Race,1,61,Simple Data,0 = Zerg 1 = Terran 2 = Protoss 3 = All,Data,Upgrades.dat
 00655C58,Portdata.dat - Idle SMK,4,110,Backed By Code,1-based reference to portdata.tbl,Client,UI
 6.55E+12,Portdata.dat - Idle SMK Change,1,110,,,Client,UI
 6.55E+82,Portdata.dat - Talking SMK,4,110,Backed By Code,1-based reference to portdata.tbl,Client,UI
 656038,Portdata.dat - Idle Unknown,1,110,,,Client,UI
 006560A8,Portdata.dat - Talking SMK change,1,110,,,Client,UI
 656118,Portdata.dat - Talking unknown,1,110,,,Client,UI
-656198,Techdata.dat - Unknown1,2,44,Simple Data,,Game,Tech.dat
-006561F0,Techdata.dat - Gas Cost,2,44,Simple Data,Address 0x006561F0 - Tech ID 000 - bit-mask 0x0000FFFF - *1...,Game,Tech.dat
-656248,Techdata.dat - Mineral Cost,2,44,Simple Data,Address 0x00656248 - Tech ID 000 - bit-mask 0x0000FFFF - *1...,Game,Tech.dat
-006562A0,Techdata.dat - Label,2,44,Simple Data,stat_txt.tbl index,Game,Tech.dat
-006562F8,Techdata.dat - Data Restrictions,2,44,Simple Data,,Game,Tech.dat
-656350,Techdata.dat - Researched,1,44,Simple Data,DatEdit says Unused?,Game,Tech.dat
-656380,Techdata.dat - Energy Cost,2,44,Simple Data,,Game,Tech.dat
-006563D8,Techdata.dat - Time,2,44,Simple Data,,Game,Tech.dat
-656430,Techdata.dat - Icon,2,44,Simple Data,cmdicons.grp frame index,Game,Tech.dat
-656488,Techdata.dat - Race,1,44,Simple Data,0 = Zerg 1 = Terran 2 = Protoss 3 = All,Game,Tech.dat
-006564B4,Techdata.dat - Brood War Flag,1,44,Simple Data,,Game,Tech.dat
-6.56E+03,Weapons.dat - Damage Factor,1,130,Simple Data,,Game,Weapons.dat
-656568,Weapons.dat - Target Error Message,2,130,Simple Data,stat_txt.tbl index,Game,Weapons.dat
-656670,Weapons.dat - Behavior,1,130,Simple Data,0 = Fly & Don't Follow Target  1 = Fly & Foll...,Game,Weapons.dat
-006566F8,Weapons.dat - Effect,1,130,Simple Data,0 = None  1 = Normal Hit 2 = Splash (Radial) 3 = Splash ...,Game,Weapons.dat
-656780,Weapons.dat - Icon,2,130,Simple Data,cmdicons.grp frame,Game,Weapons.dat
-0065678C,Damage type/factor multipliers vs unit size,20,5,,(What's this?),Game,Weapons.dat
-656888,Weapons.dat - Splash Inner Radius,2,130,Simple Data,,Game,Weapons.dat
-656990,Weapons.dat - Attack Angle,1,130,Simple Data,"""Angle within which the weapon can be fired without wa...",Game,Weapons.dat
-00656A18,Weapons.dat - Minimum Range,4,130,Simple Data,16 times the value in DatEdit.,Game,Weapons.dat
-00656C20,Weapons.dat - Graphics Y Offset,1,130,Simple Data,,Game,Weapons.dat
-00656CA8,Weapons.dat - Graphics,4,130,Simple Data,Flingy.dat index Weapon Graphic,Game,Weapons.dat
-00656EB0,Weapons.dat - Damage Amount,2,130,Simple Data,,Game,Weapons.dat
-00656FB8,Weapons.dat - Cooldown,1,130,Simple Data,,Game,Weapons.dat
-657040,Weapons.dat - Remove After,1,130,Simple Data,"""Time until the weapon is removed if it does not hit a...",Game,Weapons.dat
-006570C8,Weapons.dat - Splash Middle Radius,2,130,Simple Data,,Game,Weapons.dat
-006571D0,Weapons.dat - Upgrade ID,1,130,Simple Data,Upgrades.dat index,Game,Weapons.dat
-657258,Weapons.dat - Damage Type,1,130,Simple Data,0 = Independent 1 = Explosive 2 = Concussive 3 = Normal ...,Game,Weapons.dat
-6.57E+03,Weapons.dat - Label,2,130,Simple Data,stat_txt.tbl index,Game,Weapons.dat
-6.57E+11,Weapons.dat - Special Attack,1,130,Simple Data,Reference only?,Game,Weapons.dat
-657470,Weapons.dat - Maximum Range,4,130,Simple Data,Value is 16 times what DatEdit shows.,Game,Weapons.dat
-657678,Weapons.dat - Upgrade Bonus,2,130,Simple Data,,Game,Weapons.dat
-657780,Weapons.dat - Splash Outer Radius,2,130,Simple Data,,Game,Weapons.dat
-657888,Weapons.dat - Launch Spin,1,130,Simple Data,,Game,Weapons.dat
-657910,Weapons.dat - Graphics X Offset,1,130,Simple Data,,Game,Weapons.dat
-657998,Weapons.dat - Target Flags,2,130,Simple Data,0x001 Air 0x002 Ground 0x004 Mechanical 0x008 Organic 0...,Game,Weapons.dat
+656198,Techdata.dat - Unknown1,2,44,Simple Data,,Data,Tech.dat
+006561F0,Techdata.dat - Gas Cost,2,44,Simple Data,Address 0x006561F0 - Tech ID 000 - bit-mask 0x0000FFFF - *1...,Data,Tech.dat
+656248,Techdata.dat - Mineral Cost,2,44,Simple Data,Address 0x00656248 - Tech ID 000 - bit-mask 0x0000FFFF - *1...,Data,Tech.dat
+006562A0,Techdata.dat - Label,2,44,Simple Data,stat_txt.tbl index,Data,Tech.dat
+006562F8,Techdata.dat - Data Restrictions,2,44,Simple Data,,Data,Tech.dat
+656350,Techdata.dat - Researched,1,44,Simple Data,DatEdit says Unused?,Data,Tech.dat
+656380,Techdata.dat - Energy Cost,2,44,Simple Data,,Data,Tech.dat
+006563D8,Techdata.dat - Time,2,44,Simple Data,,Data,Tech.dat
+656430,Techdata.dat - Icon,2,44,Simple Data,cmdicons.grp frame index,Data,Tech.dat
+656488,Techdata.dat - Race,1,44,Simple Data,0 = Zerg 1 = Terran 2 = Protoss 3 = All,Data,Tech.dat
+006564B4,Techdata.dat - Brood War Flag,1,44,Simple Data,,Data,Tech.dat
+6.56E+03,Weapons.dat - Damage Factor,1,130,Simple Data,,Data,Weapons.dat
+656568,Weapons.dat - Target Error Message,2,130,Simple Data,stat_txt.tbl index,Data,Weapons.dat
+656670,Weapons.dat - Behavior,1,130,Simple Data,0 = Fly & Don't Follow Target  1 = Fly & Foll...,Data,Weapons.dat
+006566F8,Weapons.dat - Effect,1,130,Simple Data,0 = None  1 = Normal Hit 2 = Splash (Radial) 3 = Splash ...,Data,Weapons.dat
+656780,Weapons.dat - Icon,2,130,Simple Data,cmdicons.grp frame,Data,Weapons.dat
+0065678C,Damage type/factor multipliers vs unit size,20,5,,(What's this?),Data,Weapons.dat
+656888,Weapons.dat - Splash Inner Radius,2,130,Simple Data,,Data,Weapons.dat
+656990,Weapons.dat - Attack Angle,1,130,Simple Data,"""Angle within which the weapon can be fired without wa...",Data,Weapons.dat
+00656A18,Weapons.dat - Minimum Range,4,130,Simple Data,16 times the value in DatEdit.,Data,Weapons.dat
+00656C20,Weapons.dat - Graphics Y Offset,1,130,Simple Data,,Data,Weapons.dat
+00656CA8,Weapons.dat - Graphics,4,130,Simple Data,Flingy.dat index Weapon Graphic,Data,Weapons.dat
+00656EB0,Weapons.dat - Damage Amount,2,130,Simple Data,,Data,Weapons.dat
+00656FB8,Weapons.dat - Cooldown,1,130,Simple Data,,Data,Weapons.dat
+657040,Weapons.dat - Remove After,1,130,Simple Data,"""Time until the weapon is removed if it does not hit a...",Data,Weapons.dat
+006570C8,Weapons.dat - Splash Middle Radius,2,130,Simple Data,,Data,Weapons.dat
+006571D0,Weapons.dat - Upgrade ID,1,130,Simple Data,Upgrades.dat index,Data,Weapons.dat
+657258,Weapons.dat - Damage Type,1,130,Simple Data,0 = Independent 1 = Explosive 2 = Concussive 3 = Normal ...,Data,Weapons.dat
+6.57E+03,Weapons.dat - Label,2,130,Simple Data,stat_txt.tbl index,Data,Weapons.dat
+6.57E+11,Weapons.dat - Special Attack,1,130,Simple Data,Reference only?,Data,Weapons.dat
+657470,Weapons.dat - Maximum Range,4,130,Simple Data,Value is 16 times what DatEdit shows.,Data,Weapons.dat
+657678,Weapons.dat - Upgrade Bonus,2,130,Simple Data,,Data,Weapons.dat
+657780,Weapons.dat - Splash Outer Radius,2,130,Simple Data,,Data,Weapons.dat
+657888,Weapons.dat - Launch Spin,1,130,Simple Data,,Data,Weapons.dat
+657910,Weapons.dat - Graphics X Offset,1,130,Simple Data,,Data,Weapons.dat
+657998,Weapons.dat - Target Flags,2,130,Simple Data,0x001 Air 0x002 Ground 0x004 Mechanical 0x008 Organic 0...,Data,Weapons.dat
 00657A9C,Game Brightness,4,1,Simple Data,Darkens the screen without affecting UI elements. Appears t...,Client,UI
 00657AA0,Fog of War Masks,1,4096,Backed By Code,Sets the brightness parts of the fog of war masks. Correspo...,Player,Vision
-0065FC18,Units.dat - Max Hits (Air),1,228,Simple Data,This value is for statistics purposes only (?),Game,Units.dat
-0065FD00,Units.dat - Gas Cost,2,228,Simple Data,,Game,Units.dat
-0065FEC8,Units.dat - Armor,1,228,Simple Data,,Game,Units.dat
-0065FFB0,"Units.dat - ""What"" Sound Start",2,228,Simple Data,sfxdata.dat start index,Game,Units.dat
-660178,Units.dat - Computer AI Unit Type,1,228,Simple Data,"""AI Internal"" in DatEdit",Game,Units.dat
-660260,Units.dat - Map String,2,228,Simple Data,"If this property is different from 0, the unit's name ...",Game,Units.dat
-660428,Units.dat - Build Time,2,228,Simple Data,,Game,Units.dat
-006605F0,Units.dat - Start Direction,1,228,Simple Data,"""Direction unit will face after it is created. Values ...",Game,Units.dat
-006606D8,Units.dat - Brood War Flag,1,228,Simple Data,,Game,Units.dat
-006607C0,Units.dat - Subunit 1,2,228,Simple Data,228 = None,Game,Units.dat
-660988,Units.dat - Transport Space Provided,1,228,Simple Data,,Game,Units.dat
-00660A70,Units.dat - Dat Requirement Offset,2,228,Simple Data,u16 index of 0x00514178 (address is 0x00514178 + 2*this va...,Game,Units.dat
-00660C38,Units.dat - Subunit 2,2,228,Simple Data,Unused.,Game,Units.dat
-6.60E+02,Units.dat - Shield Amount,2,228,Simple Data,,Game,Units.dat
-00660FC8,Units.dat - Movement Flags,1,228,Simple Data,,Game,Units.dat
-006610B0,Units.dat - Construction Animation,4,228,Simple Data,0 = No graphics,Game,Units.dat
-661440,"Units.dat - ""Yes"" Sound End",2,106,Simple Data,sfxdata.dat end index,Game,Units.dat
-661518,Units.dat - Staredit Availability Flags,2,228,Simple Data,0x0001 - Non-Neutral 0x0002 - Unit Listing & Palette ...,Game,Units.dat
-6.62E+03,Units.dat - Air Weapon,1,228,Simple Data,Weapons.dat index,Game,Units.dat
-006617C8,Units.dat - Unit Dimensions,8,228,Simple Data,Struct: 2 bytes - Left Dimension (from center) 2 bytes - ...,Game,Units.dat
-00661EE8,"Units.dat - ""Pissed"" Sound End",2,106,Simple Data,sfxdata.dat end index,Game,Units.dat
-00661FC0,"Units.dat - ""Ready"" Sound",2,106,Simple Data,sfxdata.dat index,Game,Units.dat
-662098,Units.dat - Right-click Action,1,228,Simple Data,0 = No commands/Auto Attack 1 = Normal movement/Normal Att...,Game,Units.dat
-662180,Units.dat - Size Class,1,228,Simple Data,0 = Independent 1 = Small 2 = Medium 3 = Large,Game,Units.dat
-662268,Units.dat - Human Init Action,1,228,Simple Data,"""Human Idle Action"" in DatEdit Orders.dat index",Game,Units.dat
-662350,Units.dat - Max HP,4,228,Simple Data,Lowest byte is fractional part (*256),Game,Units.dat
-6.63E+03,Units.dat - Addon Placement,4,96,Simple Data,Struct: 2 bytes - X Pos 2 bytes - Y Pos  Only exists fo...,Game,Units.dat
-662860,Units.dat - Building Dimensions,4,228,Simple Data,Struct: 2 bytes - Width 2 bytes - Height  Setting to 0 ...,Game,Units.dat
-00662BF0,"Units.dat - ""What"" Sound End",2,228,Simple Data,sfxdata.dat end index,Game,Units.dat
-00662DB8,Units.dat - Seek Range,1,228,Simple Data,1 range unit here = 2 range units in Weapons.dat. If the v...,Game,Units.dat
-00662EA0,Units.dat - Computer Init Action,1,228,Simple Data,"""Computer Idle"" in DatEdit Orders.dat index",Game,Units.dat
-00662F88,Units.dat - Portrait,2,228,Simple Data,0xFFFF = No Portrait,Game,Units.dat
-663150,Units.dat - Elevation Level,1,228,Simple Data,Elevation Level,Game,Units.dat
-663238,Units.dat - Sight Range,1,228,Simple Data,Set value from 0-11.  Values greater than 11 will crash.  ...,Game,Units.dat
-663320,Units.dat - Attack Unit Order,1,228,Simple Data,Orders.dat reference,Game,Units.dat
-663408,Units.dat - Build Score,2,228,Simple Data,,Game,Units.dat
-006635D0,Units.dat - Armor Upgrade ID,1,228,Simple Data,Upgrades.dat index,Game,Units.dat
-006636B8,Units.dat - Ground Weapon,1,228,Simple Data,weapons.dat reference,Game,Units.dat
-006637A0,Units.dat - Group Flags,1,228,Simple Data,"0x01 - Zerg (Uses underlings, can build on creep) 0x02 - T...",Game,Units.dat
-663888,Units.dat - Mineral Cost,2,228,Simple Data,,Game,Units.dat
-00663A50,Units.dat - Attack Move Order ID,1,228,Simple Data,Orders.dat index,Game,Units.dat
-00663B38,"Units.dat - ""Pissed"" Sound Start",2,106,Simple Data,sfxdata.dat start index,Game,Units.dat
-00663C10,"Units.dat - ""Yes"" Sound Start",2,107,Simple Data,sfxdata.dat start index,Game,Units.dat
-00663CE8,Units.dat - Supply Used,1,228,Simple Data,Value here is twice what you see in-game. (Hence why 2 Zerg...,Game,Units.dat
-00663DD0,Units.dat - Rank/Sublabel,1,228,Simple Data,"""Controls ground units movement: units with lower Rank...",Game,Units.dat
-00663EB8,Units.dat - Kill Score,2,228,Simple Data,Kill Score,Game,Units.dat
-664080,Units.dat - Advanced Flags,4,228,Simple Data,0x00000001 - Building 0x00000002 - Addon 0x00000004 - Fly...,Game,Units.dat
-664410,Units.dat - Transport Space Required,1,228,Simple Data,,Game,Units.dat
-006644F8,Units.dat - Graphics (Flingy ID),1,228,Backed By Code,flingy.dat index,Game,Units.dat
-6.65E+03,Units.dat - Max Hits (Ground),1,228,Simple Data,This value is for statistics purposes only (?),Game,Units.dat
-006646C8,Units.dat - Supply Provided,1,228,Simple Data,The value is twice what you see in-game.,Game,Units.dat
-006647B0,Units.dat - Has Shields,1,228,Simple Data,"Example: Unset ""has shields"" for Protoss Observat...",Game,Units.dat
-664898,Units.dat - Idle Order,1,228,Simple Data,"""Return to Idle"" in DatEdit Orders.dat index",Game,Units.dat
-664980,Units.dat - Infestation Unit,2,96,Simple Data,Only exists for buildings (First entry is 106 Command Cente...,Game,Units.dat
-00664A40,Orders.dat - Unknown 4,1,189,Simple Data,,Game,Orders.dat
-00664B00,Orders.dat - Use Weapon Targetting,1,189,Simple Data,,Game,Orders.dat
-00664BC0,Orders.dat - Unknown 12,1,189,Simple Data,,Game,Orders.dat
-00664C80,Orders.dat - Unknown 11,1,189,Simple Data,,Game,Orders.dat
-00664D40,Orders.dat - Animation,1,189,Simple Data,0 = Initial 1 = Death 2 = Ground Attack - Initial 3 = Ai...,Game,Orders.dat
-6.64E+02,Orders.dat - Energy Technology,1,189,Simple Data,Techdata.dat index for energy,Game,Orders.dat
-00664EC0,Orders.dat - Highlight Button ID,2,189,Simple Data,cmdicons.grp frame index or 0xFFFF for none.,Game,Orders.dat
-665040,Orders.dat - Can Be Interrupted,1,189,Simple Data,,Game,Orders.dat
-665100,Orders.dat - Unknown 7,1,189,Simple Data,,Game,Orders.dat
-006651C0,Orders.dat - Unknown 9,1,189,Simple Data,,Game,Orders.dat
-665280,Orders.dat - Label ID,2,189,Simple Data,Doesn't do anything.,Game,Orders.dat
-665400,Orders.dat - Obscured Order,1,189,Simple Data,"Orders.dat index ""Order to be run if the target is ob...",Game,Orders.dat
-006654C0,Orders.dat - Can Be Obstructed?,1,189,Simple Data,,Game,Orders.dat
-665580,Orders.dat - Dat Reqs Offset,2,189,Simple Data,,Game,Orders.dat
-665700,Orders.dat - Can Be Queued,1,189,Simple Data,,Game,Orders.dat
-006657C0,Orders.dat - Unknown 5,1,189,Simple Data,,Game,Orders.dat
-665880,Orders.dat - Targeting,1,189,Simple Data,"Weapons.dat index ""Weapon used by the order to determ...",Game,Orders.dat
-665940,Orders.dat - Order is Secondary,1,189,Simple Data,Order goes in bSecondaryOrderID instead of bMainOrderID.,Game,Orders.dat
-00665A00,Orders.dat - Unknown 3,1,189,Simple Data,,Game,Orders.dat
+0065FC18,Units.dat - Max Hits (Air),1,228,Simple Data,This value is for statistics purposes only (?),Data,Units.dat
+0065FD00,Units.dat - Gas Cost,2,228,Simple Data,,Data,Units.dat
+0065FEC8,Units.dat - Armor,1,228,Simple Data,,Data,Units.dat
+0065FFB0,"Units.dat - ""What"" Sound Start",2,228,Simple Data,sfxdata.dat start index,Data,Units.dat
+660178,Units.dat - Computer AI Unit Type,1,228,Simple Data,"""AI Internal"" in DatEdit",Data,Units.dat
+660260,Units.dat - Map String,2,228,Simple Data,"If this property is different from 0, the unit's name ...",Data,Units.dat
+660428,Units.dat - Build Time,2,228,Simple Data,,Data,Units.dat
+006605F0,Units.dat - Start Direction,1,228,Simple Data,"""Direction unit will face after it is created. Values ...",Data,Units.dat
+006606D8,Units.dat - Brood War Flag,1,228,Simple Data,,Data,Units.dat
+006607C0,Units.dat - Subunit 1,2,228,Simple Data,228 = None,Data,Units.dat
+660988,Units.dat - Transport Space Provided,1,228,Simple Data,,Data,Units.dat
+00660A70,Units.dat - Dat Requirement Offset,2,228,Simple Data,u16 index of 0x00514178 (address is 0x00514178 + 2*this va...,Data,Units.dat
+00660C38,Units.dat - Subunit 2,2,228,Simple Data,Unused.,Data,Units.dat
+6.60E+02,Units.dat - Shield Amount,2,228,Simple Data,,Data,Units.dat
+00660FC8,Units.dat - Movement Flags,1,228,Simple Data,,Data,Units.dat
+006610B0,Units.dat - Construction Animation,4,228,Simple Data,0 = No graphics,Data,Units.dat
+661440,"Units.dat - ""Yes"" Sound End",2,106,Simple Data,sfxdata.dat end index,Data,Units.dat
+661518,Units.dat - Staredit Availability Flags,2,228,Simple Data,0x0001 - Non-Neutral 0x0002 - Unit Listing & Palette ...,Data,Units.dat
+6.62E+03,Units.dat - Air Weapon,1,228,Simple Data,Weapons.dat index,Data,Units.dat
+006617C8,Units.dat - Unit Dimensions,8,228,Simple Data,Struct: 2 bytes - Left Dimension (from center) 2 bytes - ...,Data,Units.dat
+00661EE8,"Units.dat - ""Pissed"" Sound End",2,106,Simple Data,sfxdata.dat end index,Data,Units.dat
+00661FC0,"Units.dat - ""Ready"" Sound",2,106,Simple Data,sfxdata.dat index,Data,Units.dat
+662098,Units.dat - Right-click Action,1,228,Simple Data,0 = No commands/Auto Attack 1 = Normal movement/Normal Att...,Data,Units.dat
+662180,Units.dat - Size Class,1,228,Simple Data,0 = Independent 1 = Small 2 = Medium 3 = Large,Data,Units.dat
+662268,Units.dat - Human Init Action,1,228,Simple Data,"""Human Idle Action"" in DatEdit Orders.dat index",Data,Units.dat
+662350,Units.dat - Max HP,4,228,Simple Data,Lowest byte is fractional part (*256),Data,Units.dat
+6.63E+03,Units.dat - Addon Placement,4,96,Simple Data,Struct: 2 bytes - X Pos 2 bytes - Y Pos  Only exists fo...,Data,Units.dat
+662860,Units.dat - Building Dimensions,4,228,Simple Data,Struct: 2 bytes - Width 2 bytes - Height  Setting to 0 ...,Data,Units.dat
+00662BF0,"Units.dat - ""What"" Sound End",2,228,Simple Data,sfxdata.dat end index,Data,Units.dat
+00662DB8,Units.dat - Seek Range,1,228,Simple Data,1 range unit here = 2 range units in Weapons.dat. If the v...,Data,Units.dat
+00662EA0,Units.dat - Computer Init Action,1,228,Simple Data,"""Computer Idle"" in DatEdit Orders.dat index",Data,Units.dat
+00662F88,Units.dat - Portrait,2,228,Simple Data,0xFFFF = No Portrait,Data,Units.dat
+663150,Units.dat - Elevation Level,1,228,Simple Data,Elevation Level,Data,Units.dat
+663238,Units.dat - Sight Range,1,228,Simple Data,Set value from 0-11.  Values greater than 11 will crash.  ...,Data,Units.dat
+663320,Units.dat - Attack Unit Order,1,228,Simple Data,Orders.dat reference,Data,Units.dat
+663408,Units.dat - Build Score,2,228,Simple Data,,Data,Units.dat
+006635D0,Units.dat - Armor Upgrade ID,1,228,Simple Data,Upgrades.dat index,Data,Units.dat
+006636B8,Units.dat - Ground Weapon,1,228,Simple Data,weapons.dat reference,Data,Units.dat
+006637A0,Units.dat - Group Flags,1,228,Simple Data,"0x01 - Zerg (Uses underlings, can build on creep) 0x02 - T...",Data,Units.dat
+663888,Units.dat - Mineral Cost,2,228,Simple Data,,Data,Units.dat
+00663A50,Units.dat - Attack Move Order ID,1,228,Simple Data,Orders.dat index,Data,Units.dat
+00663B38,"Units.dat - ""Pissed"" Sound Start",2,106,Simple Data,sfxdata.dat start index,Data,Units.dat
+00663C10,"Units.dat - ""Yes"" Sound Start",2,107,Simple Data,sfxdata.dat start index,Data,Units.dat
+00663CE8,Units.dat - Supply Used,1,228,Simple Data,Value here is twice what you see in-game. (Hence why 2 Zerg...,Data,Units.dat
+00663DD0,Units.dat - Rank/Sublabel,1,228,Simple Data,"""Controls ground units movement: units with lower Rank...",Data,Units.dat
+00663EB8,Units.dat - Kill Score,2,228,Simple Data,Kill Score,Data,Units.dat
+664080,Units.dat - Advanced Flags,4,228,Simple Data,0x00000001 - Building 0x00000002 - Addon 0x00000004 - Fly...,Data,Units.dat
+664410,Units.dat - Transport Space Required,1,228,Simple Data,,Data,Units.dat
+006644F8,Units.dat - Graphics (Flingy ID),1,228,Backed By Code,flingy.dat index,Data,Units.dat
+6.65E+03,Units.dat - Max Hits (Ground),1,228,Simple Data,This value is for statistics purposes only (?),Data,Units.dat
+006646C8,Units.dat - Supply Provided,1,228,Simple Data,The value is twice what you see in-game.,Data,Units.dat
+006647B0,Units.dat - Has Shields,1,228,Simple Data,"Example: Unset ""has shields"" for Protoss Observat...",Data,Units.dat
+664898,Units.dat - Idle Order,1,228,Simple Data,"""Return to Idle"" in DatEdit Orders.dat index",Data,Units.dat
+664980,Units.dat - Infestation Unit,2,96,Simple Data,Only exists for buildings (First entry is 106 Command Cente...,Data,Units.dat
+00664A40,Orders.dat - Unknown 4,1,189,Simple Data,,Data,Orders.dat
+00664B00,Orders.dat - Use Weapon Targetting,1,189,Simple Data,,Data,Orders.dat
+00664BC0,Orders.dat - Unknown 12,1,189,Simple Data,,Data,Orders.dat
+00664C80,Orders.dat - Unknown 11,1,189,Simple Data,,Data,Orders.dat
+00664D40,Orders.dat - Animation,1,189,Simple Data,0 = Initial 1 = Death 2 = Ground Attack - Initial 3 = Ai...,Data,Orders.dat
+6.64E+02,Orders.dat - Energy Technology,1,189,Simple Data,Techdata.dat index for energy,Data,Orders.dat
+00664EC0,Orders.dat - Highlight Button ID,2,189,Simple Data,cmdicons.grp frame index or 0xFFFF for none.,Data,Orders.dat
+665040,Orders.dat - Can Be Interrupted,1,189,Simple Data,,Data,Orders.dat
+665100,Orders.dat - Unknown 7,1,189,Simple Data,,Data,Orders.dat
+006651C0,Orders.dat - Unknown 9,1,189,Simple Data,,Data,Orders.dat
+665280,Orders.dat - Label ID,2,189,Simple Data,Doesn't do anything.,Data,Orders.dat
+665400,Orders.dat - Obscured Order,1,189,Simple Data,"Orders.dat index ""Order to be run if the target is ob...",Data,Orders.dat
+006654C0,Orders.dat - Can Be Obstructed?,1,189,Simple Data,,Data,Orders.dat
+665580,Orders.dat - Dat Reqs Offset,2,189,Simple Data,,Data,Orders.dat
+665700,Orders.dat - Can Be Queued,1,189,Simple Data,,Data,Orders.dat
+006657C0,Orders.dat - Unknown 5,1,189,Simple Data,,Data,Orders.dat
+665880,Orders.dat - Targeting,1,189,Simple Data,"Weapons.dat index ""Weapon used by the order to determ...",Data,Orders.dat
+665940,Orders.dat - Order is Secondary,1,189,Simple Data,Order goes in bSecondaryOrderID instead of bMainOrderID.,Data,Orders.dat
+00665A00,Orders.dat - Unknown 3,1,189,Simple Data,,Data,Orders.dat
 00665AC0,Sprites.dat - Selection Circle,1,387,Read Only,Images.dat reference starting at index 561. Starts on spri...,Client,Render
 00665C48,Sprites.dat - Visible,1,517,Simple Data,,Client,Render
 6.65E+52,Sprites.dat - HP Bar Length,1,387,Read Only,Starts on Sprites.dat ID 130.,Client,Render
@@ -607,53 +607,53 @@
 006D0E80,Creep Overlay Buffer,4,1,Unsupported,Pointer to u8 flags relating to the creep overlay for each ...,Game,Game
 006D0E84,Active Tile Buffer,4,1,Unsupported,Pointer to u16 array of active map tiles.,Game,Game
 006D0F08,Tile Buffer Width,4,1,Unsupported,Copy of Map Width,Game,Game
-006D0F30,Replay Header,633,1,Read Only,https://github.com/bwapi/bwapi/blob/master/bwapi/BWAPI/Sour...,Game,Engine
-006D0F30,Replay Header - Is Broodwar,1,1,Read Only,,Game,Engine
-006D0F31,Replay Header - Frame Count,4,1,Read Only,,Game,Engine
-006D0F35,Replay Header - Campaign ID,2,1,Read Only,,Game,Engine
-006D0F37,Replay Header - Command ID,1,1,Read Only,struct gameSeed,Game,Engine
-006D0F38,Replay Header - Rand Seed,4,1,Read Only,struct gameSeed. Unix time on game start.(The number of sec...,Game,Engine
-006D0F3C,Replay Header - Player Bytes,1,8,Read Only,struct gameSeed,Game,Engine
-006D0F44,Replay Header - Unknown_0,4,1,Read Only,struct networkGameHeader,Game,Engine
+006D0F30,Replay Header,633,1,Read Only,https://github.com/bwapi/bwapi/blob/master/bwapi/BWAPI/Sour...,Game,ReplayHeader
+006D0F30,Replay Header - Is Broodwar,1,1,Read Only,,Game,ReplayHeader
+006D0F31,Replay Header - Frame Count,4,1,Read Only,,Game,ReplayHeader
+006D0F35,Replay Header - Campaign ID,2,1,Read Only,,Game,ReplayHeader
+006D0F37,Replay Header - Command ID,1,1,Read Only,struct gameSeed,Game,ReplayHeader
+006D0F38,Replay Header - Rand Seed,4,1,Read Only,struct gameSeed. Unix time on game start.(The number of sec...,Game,ReplayHeader
+006D0F3C,Replay Header - Player Bytes,1,8,Read Only,struct gameSeed,Game,ReplayHeader
+006D0F44,Replay Header - Unknown_0,4,1,Read Only,struct networkGameHeader,Game,ReplayHeader
 006D0F48,?�험,25,1,Read Only,?�험,Game,Engine
-006D0F60,Replay Header - Game flags,4,1,Read Only,struct networkGameHeader,Game,Engine
-006D0F64,Replay Header - MapSize,2,2,Read Only,2Byte MapWidth 2Byte MapHeight  struct networkGameHeader,Game,Engine
-006D0F68,Replay Header - Active Player Count,1,1,Read Only,struct networkGameHeader,Game,Engine
-006D0F69,Replay Header - Available Slots,1,1,Read Only,struct networkGameHeader,Game,Engine
-006D0F6A,Replay Header - Game Speed,1,1,Read Only,struct networkGameHeader,Game,Engine
-006D0F6B,Replay Header - Game State,1,1,Read Only,struct networkGameHeader,Game,Engine
-006D0F6C,Replay Header - Game Type,1,1,Read Only,struct networkGameHeader,Game,Engine
-006D0F6D,Replay Header - Unknown_1,1,1,Read Only,struct networkGameHeader,Game,Engine
-006D0F6E,Replay Header - Game Subtype,2,1,Read Only,struct networkGameHeader,Game,Engine
-006D0F70,Replay Header - Seed (Unused),4,1,Read Only,struct networkGameHeader,Game,Engine
-006D0F74,Replay Header - Tileset,2,1,Read Only,struct networkGameHeader,Game,Engine
-006D0F76,Replay Header - Autosaved,1,1,Read Only,struct networkGameHeader,Game,Engine
-006D0F77,Replay Header- Computer Player Count,1,1,Read Only,struct networkGameHeader,Game,Engine
-006D0F78,Replay Header - Game Name,1,25,Read Only,struct networkGameHeader,Game,Engine
-006D0F91,Replay Header - Map Name,1,24,Read Only,struct networkGameHeader,Game,Engine
-006D0FB1,Replay Header - Game Type,1,1,Read Only,struct networkGameHeader.gameTemplateInfo,Game,Engine
-006D0FB2,Replay Header - Unknown,1,1,Read Only,struct networkGameHeader.gameTemplateInfo,Game,Engine
-006D0FB3,Replay Header - Subtype,2,1,Read Only,struct networkGameHeader.gameTemplateInfo,Game,Engine
-006D0FB5,Replay Header - Subtype display,2,1,Read Only,struct networkGameHeader.gameTemplateInfo,Game,Engine
-006D0FB7,Replay Header - Subtype Label,2,1,Read Only,struct networkGameHeader.gameTemplateInfo,Game,Engine
-006D0FB9,Replay Header - Victory Condition,1,1,Read Only,struct networkGameHeader.gameTemplateInfo,Game,Engine
-006D0FBA,Replay Header - Res Type,1,1,Read Only,struct networkGameHeader.gameTemplateInfo,Game,Engine
-006D0FBB,Replay Header - Use Standard Units,1,1,Read Only,boolean  struct networkGameHeader.gameTemplateInfo,Game,Engine
-006D0FBC,Replay Header - Fog of War (Unused),1,1,Read Only,struct networkGameHeader.gameTemplateInfo,Game,Engine
-006D0FBD,Replay Header - Starting Units,1,1,Read Only,struct networkGameHeader.gameTemplateInfo,Game,Engine
-006D0FBE,Replay Header - Use Fixed Positions,1,1,Read Only,boolean  struct networkGameHeader.gameTemplateInfo,Game,Engine
-006D0FBF,Replay Header - Usage Restriction Flags,1,1,Read Only,struct networkGameHeader.gameTemplateInfo,Game,Engine
-006D0FC0,Replay Header - Allies Allowed,1,1,Read Only,boolean  struct networkGameHeader.gameTemplateInfo,Game,Engine
-006D0FC1,Replay Header - Teams,1,1,Read Only,struct networkGameHeader.gameTemplateInfo,Game,Engine
-006D0FC2,Replay Header - Cheats,1,1,Read Only,boolean  struct networkGameHeader.gameTemplateInfo,Game,Engine
-006D0FC3,Replay Header - Tournament Mode,1,1,Read Only,struct networkGameHeader.gameTemplateInfo,Game,Engine
-006D0FC4,Replay Header - Victory Condition Value,4,1,Read Only,struct networkGameHeader.gameTemplateInfo,Game,Engine
-006D0FC8,Replay Header - Ress Value,4,1,Read Only,struct networkGameHeader.gameTemplateInfo,Game,Engine
-006D0FCC,Replay Header - Unused value,4,1,Read Only,struct networkGameHeader.gameTemplateInfo,Game,Engine
-006D0FD0,Replay Header - Extra,1,1,Read Only,f,Game,Engine
-006D0FD1,Replay Header - Player Entries,36,12,Read Only,Unfortunately this struct is not dword-aligned.  +0 - u32...,Game,Engine
-006D1181,Replay Header - Player Colors,4,8,Read Only,,Game,Engine
-006D11A1,Replay Header - Player Force Data,1,8,Read Only,,Game,Engine
+006D0F60,Replay Header - Game flags,4,1,Read Only,struct networkGameHeader,Game,ReplayHeader
+006D0F64,Replay Header - MapSize,2,2,Read Only,2Byte MapWidth 2Byte MapHeight  struct networkGameHeader,Game,ReplayHeader
+006D0F68,Replay Header - Active Player Count,1,1,Read Only,struct networkGameHeader,Game,ReplayHeader
+006D0F69,Replay Header - Available Slots,1,1,Read Only,struct networkGameHeader,Game,ReplayHeader
+006D0F6A,Replay Header - Game Speed,1,1,Read Only,struct networkGameHeader,Game,ReplayHeader
+006D0F6B,Replay Header - Game State,1,1,Read Only,struct networkGameHeader,Game,ReplayHeader
+006D0F6C,Replay Header - Game Type,1,1,Read Only,struct networkGameHeader,Game,ReplayHeader
+006D0F6D,Replay Header - Unknown_1,1,1,Read Only,struct networkGameHeader,Game,ReplayHeader
+006D0F6E,Replay Header - Game Subtype,2,1,Read Only,struct networkGameHeader,Game,ReplayHeader
+006D0F70,Replay Header - Seed (Unused),4,1,Read Only,struct networkGameHeader,Game,ReplayHeader
+006D0F74,Replay Header - Tileset,2,1,Read Only,struct networkGameHeader,Game,ReplayHeader
+006D0F76,Replay Header - Autosaved,1,1,Read Only,struct networkGameHeader,Game,ReplayHeader
+006D0F77,Replay Header- Computer Player Count,1,1,Read Only,struct networkGameHeader,Game,ReplayHeader
+006D0F78,Replay Header - Game Name,1,25,Read Only,struct networkGameHeader,Game,ReplayHeader
+006D0F91,Replay Header - Map Name,1,24,Read Only,struct networkGameHeader,Game,ReplayHeader
+006D0FB1,Replay Header - Game Type,1,1,Read Only,struct networkGameHeader.gameTemplateInfo,Game,ReplayHeader
+006D0FB2,Replay Header - Unknown,1,1,Read Only,struct networkGameHeader.gameTemplateInfo,Game,ReplayHeader
+006D0FB3,Replay Header - Subtype,2,1,Read Only,struct networkGameHeader.gameTemplateInfo,Game,ReplayHeader
+006D0FB5,Replay Header - Subtype display,2,1,Read Only,struct networkGameHeader.gameTemplateInfo,Game,ReplayHeader
+006D0FB7,Replay Header - Subtype Label,2,1,Read Only,struct networkGameHeader.gameTemplateInfo,Game,ReplayHeader
+006D0FB9,Replay Header - Victory Condition,1,1,Read Only,struct networkGameHeader.gameTemplateInfo,Game,ReplayHeader
+006D0FBA,Replay Header - Res Type,1,1,Read Only,struct networkGameHeader.gameTemplateInfo,Game,ReplayHeader
+006D0FBB,Replay Header - Use Standard Units,1,1,Read Only,boolean  struct networkGameHeader.gameTemplateInfo,Game,ReplayHeader
+006D0FBC,Replay Header - Fog of War (Unused),1,1,Read Only,struct networkGameHeader.gameTemplateInfo,Game,ReplayHeader
+006D0FBD,Replay Header - Starting Units,1,1,Read Only,struct networkGameHeader.gameTemplateInfo,Game,ReplayHeader
+006D0FBE,Replay Header - Use Fixed Positions,1,1,Read Only,boolean  struct networkGameHeader.gameTemplateInfo,Game,ReplayHeader
+006D0FBF,Replay Header - Usage Restriction Flags,1,1,Read Only,struct networkGameHeader.gameTemplateInfo,Game,ReplayHeader
+006D0FC0,Replay Header - Allies Allowed,1,1,Read Only,boolean  struct networkGameHeader.gameTemplateInfo,Game,ReplayHeader
+006D0FC1,Replay Header - Teams,1,1,Read Only,struct networkGameHeader.gameTemplateInfo,Game,ReplayHeader
+006D0FC2,Replay Header - Cheats,1,1,Read Only,boolean  struct networkGameHeader.gameTemplateInfo,Game,ReplayHeader
+006D0FC3,Replay Header - Tournament Mode,1,1,Read Only,struct networkGameHeader.gameTemplateInfo,Game,ReplayHeader
+006D0FC4,Replay Header - Victory Condition Value,4,1,Read Only,struct networkGameHeader.gameTemplateInfo,Game,ReplayHeader
+006D0FC8,Replay Header - Ress Value,4,1,Read Only,struct networkGameHeader.gameTemplateInfo,Game,ReplayHeader
+006D0FCC,Replay Header - Unused value,4,1,Read Only,struct networkGameHeader.gameTemplateInfo,Game,ReplayHeader
+006D0FD0,Replay Header - Extra,1,1,Read Only,f,Game,ReplayHeader
+006D0FD1,Replay Header - Player Entries,36,12,Read Only,Unfortunately this struct is not dword-aligned.  +0 - u32...,Game,ReplayHeader
+006D1181,Replay Header - Player Colors,4,8,Read Only,,Game,ReplayHeader
+006D11A1,Replay Header - Player Force Data,1,8,Read Only,,Game,ReplayHeader
 006D1200,iscript.bin pointer,4,1,Backed By Code,,Game,Engine
 006D1238,stat_txt.tbl pointer,4,1,Backed By Code,,Game,Engine
 006D1260,Tile Flags Pointer,4,1,Backed By Code,Pointer to (Map Width)x(Map Height) array of u32 flags: 0x...,Game,Game

@@ -2,12 +2,12 @@
 sidebar_position: 0
 ---
 
-# Game Upgrades.dat
+# Data Upgrades.dat
 
 `Upgrades.dat` rows from `EUDDB.csv`.
 
 - Source rows: 12
-- CSV tag: `Game`, `Upgrades.dat`
+- CSV tag: `Data`, `Upgrades.dat`
 
 ## Included Offsets
 

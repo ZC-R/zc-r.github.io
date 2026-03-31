@@ -2,12 +2,12 @@
 sidebar_position: 0
 ---
 
-# Game Tech.dat
+# Data Tech.dat
 
 `Techdata.dat` rows from `EUDDB.csv`.
 
 - Source rows: 11
-- CSV tag: `Game`, `Tech.dat`
+- CSV tag: `Data`, `Tech.dat`
 
 ## Included Offsets
 

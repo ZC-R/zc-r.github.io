@@ -28,14 +28,15 @@ const offsetBars: SidebarsConfig = {
   CUnit_stateBar: [auto('CUnit/State')],
   CUnit_unionBar: [auto('CUnit/Union')],
 
-  Game_combatBar: [auto('Game/Combat')],
   Game_engineBar: [auto('Game/Engine')],
   Game_gameBar: [auto('Game/Game')],
-  Game_ordersBar: [auto('Game/Orders.dat')],
-  Game_techBar: [auto('Game/Tech.dat')],
-  Game_unitsBar: [auto('Game/Units.dat')],
-  Game_upgradesBar: [auto('Game/Upgrades.dat')],
-  Game_weaponsBar: [auto('Game/Weapons.dat')],
+  Game_replayHeaderBar: [auto('Game/ReplayHeader')],
+
+  Data_ordersBar: [auto('Data/Orders.dat')],
+  Data_techBar: [auto('Data/Tech.dat')],
+  Data_unitsBar: [auto('Data/Units.dat')],
+  Data_upgradesBar: [auto('Data/Upgrades.dat')],
+  Data_weaponsBar: [auto('Data/Weapons.dat')],
 
   Player_metadataBar: [auto('Player/Metadata')],
   Player_resBar: [auto('Player/Res')],

@@ -2,12 +2,12 @@
 sidebar_position: 0
 ---
 
-# Game Orders.dat
+# Data Orders.dat
 
 Unified order-related rows from `EUDDB.csv`, including `Orders.dat` metadata and closely related order helpers.
 
 - Source rows: 21
-- CSV tag: `Game`, `Orders.dat`
+- CSV tag: `Data`, `Orders.dat`
 
 ## Included Offsets
 
